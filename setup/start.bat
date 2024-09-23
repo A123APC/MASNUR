@@ -1,1 +1,0 @@
-"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --kiosk --edge-kiosk-type=fullscreen --app=C:\Users\organizer\Videos\asal\Event\complete\complete.html

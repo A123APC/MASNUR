@@ -1,0 +1,450 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: 0;
+}
+
+/* end css reset */
+
+/* root */
+
+* {
+    font-family: 'poppins';
+}
+
+:root {
+    --primary: #A3D16B;
+    --black: #161616;
+    --grey: #8F8F8F;
+    --soft-grey: rgba(62, 62, 62, 0.399);
+    --white: #ffffff;
+    --cover: #00000080;
+    --hover: #608c2a;
+}
+
+html, body {
+    font-family: 'poppins';
+    background-color: var(--black);
+    text-align: center;
+}
+
+section {
+    position: relative;
+    margin: 5vw 0;
+    padding-bottom: 5vw;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    margin: 4vw 0;
+}
+
+h1 {
+    font-size: 3vw;
+    font-weight: 600;
+    line-height: 4vw;
+    color: var(--white);
+}
+
+h2 {
+    font-size: 2.5vw;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: var(--black);
+}
+
+p {
+    font-size: 1vw;
+    color: var(--grey);
+}
+
+button {
+    background-color: var(--primary);
+    color: var(--white);
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+button:hover {
+    background-color: var(--hover);
+}
+
+button.primary {
+    border-radius: 10vw;
+    padding: 1.2vw 2.5vw;
+    font-size: 1.5vw;
+}
+
+button.scondary {
+    border-radius: 10vw;
+    padding: 0.7vw 1.7vw;
+    font-size: 1vw;
+}
+
+/* contain */
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vw 3.5vw;
+    color: var(--white);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999999;
+    background-color: var(--black);
+}
+
+header img {
+    width: 7vw;
+}
+
+ul {
+    display: flex;
+    gap: 4vw;
+    font-size: 1.3vw;
+}
+
+/* container */
+
+/* content video */
+iframe {
+    width: 100%;
+    height: 60vw;
+    margin: 0;
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    padding-left: 8vw;
+    text-align: left;
+
+}
+
+/* section dua */
+
+section.dua {
+    background-color: var(--white);
+    border-radius: 5vw 5vw 0 0;
+    margin-top: 15vw;
+}
+
+.kreasi-container {
+    display: flex;
+    justify-content:center;
+    gap: 10vw;
+    padding: 0 5vw;
+}
+
+.kreasi-card {
+    margin-top: -8vw;
+    width: 21vw;
+}
+
+.kreasi-card img{
+    width: 18vw;
+    margin-bottom: -1.5vw;
+}
+
+.kreasi-card h3, .kreasi-card p {
+    margin: 1vw 0;
+}
+
+.kreasi-card p {
+    line-height: 1.2vw;
+}
+
+section.dua h1 {
+    color: var(--black);
+    margin-top: 5vw;
+    margin-bottom: 1vw;
+}
+
+/* skala */
+
+.card-skala-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5vw 0;
+}
+
+.card-skala {
+    width: 20vw;
+    height: 27vw;
+    background-color: var(--primary);
+    border-radius: 3vw;
+    filter: drop-shadow(0 0 1vw var(--primary));
+    position: relative;
+}
+
+.card-skala img {
+    width: 25vw;
+    margin-top: -3.5vw;
+}
+
+.card-skala .title {
+    position: absolute;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-skala p {
+    color: var(--black);
+}
+
+/* banner swiperJS*/
+.swiper {
+    width: 90%;
+    height: 40vw;
+    position: relative;
+  }
+  .swiper-slide {
+    overflow: hidden;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: var(--primary) !important;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  .cover-banner {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .icon {
+    width: 50%;
+    height: 50%;
+  }
+  
+  .next, .back {
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5vw;
+    margin: 0 2vw;
+    background-color: rgba(209, 209, 209, 0.5);
+    cursor: pointer;
+  }
+
+  .next:hover,
+  .back:hover {
+    background-color: var(--primary);
+  }
+
+/* section berkembang */
+.berkembang-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5vw;
+}
+
+.berkembang-card {
+    width: 22vw;
+    text-align: left;
+    line-height: 1.2vw;
+}
+
+.berkembang-card img {
+    width: 5vw;
+    margin-bottom: 1vw;
+}
+
+.berkembang-card p {
+    margin-bottom: 1.5vw;
+}
+
+/* service container */
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-service {
+    width: 21vw;
+    height: 33vw;
+    border-radius: 2vw;
+    background-color: var(--primary);
+    overflow: hidden;
+}
+
+.card-service h3 {
+    margin-bottom: 1vw;
+}
+
+.card-service h3, .card-service p {
+    line-height: 1.2vw;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: var(--white);
+}
+
+div.card-service .image {
+    height: 60%;
+    overflow: hidden;
+    margin-bottom: 2vw;
+}
+
+div.card-service .image img {
+    width: 100%;
+}
+
+/* madding */
+
+.madding {
+    width: 100%;
+    height: 50vw;
+    background-image: url('../img/madding.png');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.madding h1 {
+    margin-left: 10%;
+}
+
+/* contact container */
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5vw;
+}
+
+.bio {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 1vw;
+    margin: 2vw 0;
+}
+
+.bio .icon {
+    color: var(--primary);
+    width: 2vw;
+    cursor: pointer;
+}
+
+.bio h3 {
+    color: var(--primary);
+}
+
+.contact-form {
+    width: 55%;
+}
+
+.contact-form div {
+    display: flex;
+    justify-content: space-between;
+    gap: 1vw;
+    margin: 1vw 0;
+}
+
+form input,
+form textarea {
+    background-color: var(--soft-grey);
+    border: none;
+    width: 100%;
+    color: var(--grey);
+    padding: 1vw 1.5vw;
+    font-size: 1vw;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: 0.1vw solid var(--primary);
+}
+
+textarea {
+    height: 10vw;
+}
