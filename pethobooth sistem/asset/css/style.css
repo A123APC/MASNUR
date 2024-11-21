@@ -108,10 +108,41 @@ button {
     background: none;
 }
 
+.voucherBtn {
+    display: inline-block;
+    font-size: .8vw;
+    background-color: rgb(255, 181, 85);
+    padding: .8vw;
+    border-radius: 3vw;
+    color: rgb(185, 68, 0);
+}
+
 button img {
     width: 100%;
 }
+/* voucher container */
+.voucher-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1vw;
+}
 
+.voucher-container div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    margin-top: 3vw;
+    border: none;
+    padding: .5vw 1vw;
+    font-size: .8vw;
+    background-color: white;
+    color: rgb(0, 115, 216);
+    outline-color: rgb(131, 185, 255);
+}
 /* bawah container */
 .bawah {
     display: flex;
